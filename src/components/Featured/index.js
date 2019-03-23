@@ -6,7 +6,7 @@ const Featured = () => {
     return (
         <div style={{position: 'relative'}}>
             <Carousel />
-            <div className='artist_name'>
+            <div className='name'>
                 <div className='wrapper'>
                     Japanese Garden
                 </div>

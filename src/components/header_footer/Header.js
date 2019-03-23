@@ -48,7 +48,7 @@ class Header extends Component {
             <Toolbar>
                 <div className='header_logo'>
                     <div className='font_righteous header_logo_venue'>The Garden</div>
-                    <div className='header_logo_title'>Public Events At Portland Japanese Garden</div>
+                    <div className='header_logo_title'>Public Events At PJG</div>
                 </div>
                 <IconButton
                     aria-label='Menu'

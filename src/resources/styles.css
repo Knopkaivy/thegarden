@@ -3,6 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     padding:0;
     margin:0;
+    width: 100vw;
     min-width: 375px;
     min-height: 700px;
 }
@@ -43,10 +44,11 @@ body {
 header {
     padding:10px 0px;
     transition: all 300ms ease-in;
+    width: 100vw;
 }
 
 header .header_logo {
-    flex-grow: 1;
+    margin-right: auto;
 }
 header .header_logo_venue {
     font-size: 40px;
@@ -91,11 +93,13 @@ footer .footer_copyright {
     height: 100vh;
 }
 
-.artist_name {
+.name {
     position: absolute;
     top: 48%;
     left: 50%;
-    width: 400px;
+    width: 50vw;
+    min-width: 300px;
+    max-width: 400px;
     height: 277px;
     -webkit-transform: translate(-50%, -50%);  
     transform: translate(-50%, -50%);   
@@ -103,7 +107,7 @@ footer .footer_copyright {
     box-shadow: inset 0.25px 0.25px 0.25px #4946468f;
 }
 
-.artist_name .wrapper {
+.name .wrapper {
     border: 2px solid white;
     box-shadow: 0.25px 0.25px 0.25px #4946468f;
     height: 121px;
@@ -111,7 +115,8 @@ footer .footer_copyright {
     text-align: center;
     color: #fff;
     font-size: 50px;
-    padding: 70px 70px 70px 70px;
+    /* padding: 70px 70px 70px 70px; */
+    padding: 70px 0;
     text-transform: uppercase;
     text-shadow: 0.25px 0.25px 0.25px #4946468f;
 }
@@ -137,23 +142,25 @@ footer .footer_copyright {
 .countdown_wrapper .countdown_bottom {
     display: flex;
     background: #d93d00;
-    padding: 10px 20px;
+    padding: 10px 0;
 }
 
 .countdown_wrapper .countdown_time {
-    font-size: 70px;
+    font-size: 10vw;
     border-right: 1px solid #F44336;
-    margin-right: 14px;
-    padding-right: 49px;
+    padding: 0 49px 0 20px;
+    box-sizing: border-box;
 }
-.countdown_wrapper .countdown_item:last-child .countdown_time{
-    border:none;
+
+.countdown_wrapper .countdown_item {
+    max-width: 25vw;
 }
 
 .countdown_wrapper .countdown_tag {
     text-transform: uppercase;
     font-size: 20px;
-    padding-left: 7px;
+    padding-left: 20px;
+    box-sizing: border-box;
 }
 
 /*====================
@@ -367,3 +374,12 @@ footer .footer_copyright {
     padding: 15px 20px;
     text-align: center;
 }
+
+/*====================
+        MEDIA    
+======================*/
+@media screen and (min-width: 700px) {
+    .countdown_wrapper .countdown_time {
+       font-size: 70px;
+    }
+  }
