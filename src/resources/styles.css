@@ -1,8 +1,10 @@
 
 body {
+    font-family: 'Roboto', sans-serif;
     padding:0;
     margin:0;
-    font-family: 'Roboto', sans-serif;
+    min-width: 375px;
+    min-height: 700px;
 }
 
 .font_righteous {
@@ -78,13 +80,15 @@ footer .footer_copyright {
 
 
 .carrousel_wrapper {
-    height:700px;
+    /* height:700px; */
+    height:100vh;
     overflow: hidden;
 }
 
 .carrousel_image {
     
     background-size: cover !important;
+    height: 100vh;
 }
 
 .artist_name {
