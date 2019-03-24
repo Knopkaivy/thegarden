@@ -18,7 +18,6 @@ const Carousel = () => {
             className='carrousel_wrapper'
             style={{
                 backgroundColor: 'red',
-                // height: `${window.innerHeight}px`,
                 overflow: 'hidden' 
             }}    
         >
@@ -31,7 +30,6 @@ const Carousel = () => {
                         backgroundPosition: 'center',
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat',
-                        // height: `${window.innerHeight}px`
                     }}
                 ></div>
             </div>
@@ -43,7 +41,6 @@ const Carousel = () => {
                         backgroundPosition: 'center',
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat',
-                        // height: `${window.innerHeight}px`
                     }}
                 ></div>
             </div>
@@ -55,7 +52,6 @@ const Carousel = () => {
                         backgroundPosition: 'center',
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat',
-                        // height: `${window.innerHeight}px`
                     }}
                 ></div>
             </div>

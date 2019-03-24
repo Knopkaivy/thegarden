@@ -1,4 +1,9 @@
 
+html {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     padding:0;
@@ -43,23 +48,25 @@ body {
 
 
 header {
-    text-shadow: 0 0 2px #d93d00;
-    padding: 10px;
-    box-sizing: border-box;
-    transition: all 300ms ease-in;
+    /* text-shadow: 0 0 2px #d93d00; */
+    color: #d93d00;
+    width: 100vh;
 }
 
 header .header_logo {
     margin-right: auto;
 }
 header .header_logo_venue {
+    color: black;
+        -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #d93d00;
     font-size: 40px;
-    /* text-shadow: 0.25px 0.25px 0.25px #4946468f; */
 }
 
 header .header_logo_title {
     text-transform: uppercase;
-    text-shadow: 0.25px 0.25px 0.25px #4946468f;
+    font-weight: 400;
 }
 
 /*====================
