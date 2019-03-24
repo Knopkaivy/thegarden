@@ -30,6 +30,7 @@ const Carousel = () => {
                         backgroundPosition: 'center',
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat',
+                        width: '100vw'
                     }}
                 ></div>
             </div>
@@ -41,6 +42,7 @@ const Carousel = () => {
                         backgroundPosition: 'center',
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat',
+                        width: '100vw'
                     }}
                 ></div>
             </div>
@@ -52,6 +54,7 @@ const Carousel = () => {
                         backgroundPosition: 'center',
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat',
+                        width: '100vw'
                     }}
                 ></div>
             </div>
