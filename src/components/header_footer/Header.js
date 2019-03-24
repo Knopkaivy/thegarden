@@ -55,7 +55,7 @@ class Header extends Component {
                     color='inherit'
                     onClick={()=> this.toggleDrawer(true)}
                 >
-                    <MenuIcon />
+                <MenuIcon />
                 </IconButton>
                 <SideDrawer
                     open={this.state.drawerOpen}

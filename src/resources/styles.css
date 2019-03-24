@@ -32,7 +32,7 @@ body {
 
 .center_wrapper {
     width: 100vw;
-    max-width: 900px;
+    max-width: 920px;
     margin:0 auto;
 }
 
@@ -43,9 +43,9 @@ body {
 
 
 header {
-    padding:10px 0px;
+    padding: 10px;
+    box-sizing: border-box;
     transition: all 300ms ease-in;
-    width: 100vw;
 }
 
 header .header_logo {
@@ -177,19 +177,14 @@ footer .footer_copyright {
 }
 
 .vn_item {
-    /* width:50%; */
-    /* width: 50vw; */
-    min-width: 300px;
     color:#ffffff;
     text-align: center;
-    /* margin: 0 auto; */
     margin-top: 100px;
 }
                       
 .vn_item .vn_outer {
     width: 300px;
     border: 2px solid #828282;
-    /* margin: auto; */
     padding: 5px;
 }
 
@@ -261,11 +256,12 @@ footer .footer_copyright {
 
 .discount_wrapper {
     display: flex;
-    padding: 70px 0px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .discount_wrapper .discount_percentage {
-    padding-right: 100px;
+    padding: 70px 15px;
 }
 
 .discount_wrapper .discount_percentage span:nth-child(1) {
@@ -283,6 +279,9 @@ footer .footer_copyright {
     display: block;
 }
 
+.discount_wrapper .discount_description {
+    padding: 70px 15px;
+}
 
 .discount_wrapper .discount_description h3 {
     font-size: 34px;
@@ -310,18 +309,19 @@ footer .footer_copyright {
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
-    font-size: 50px;
+    font-size: 7vw;
     margin: 0;
 }
 
 .pricing_wrapper {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
+    align-items: center;
 }
 .pricing_wrapper .pricing_item{
-    flex-grow: 1;
-    width: 33%;
-    padding: 20px;
+    width: 280px;
+    padding: 20px 15px;
     box-sizing: border-box;
 }
 
@@ -390,10 +390,30 @@ footer .footer_copyright {
     .countdown_wrapper .countdown_time {
        font-size: 70px;
     }
+    .pricing_section h2 {
+        font-size: 50px;
+    }
 }
 
 @media screen and (max-width: 900px){
-    .vn_wrapper {
+    .vn_wrapper,
+    .discount_wrapper,
+    /* .pricing_wrapper { */
+    {
         flex-direction: column;
+    }
+    .highlight_wrapper .highlight_description {
+        padding: 30px 15px;
+        text-align: center;
+    }
+    .discount_wrapper .discount_percentage,
+    .discount_wrapper .discount_description {
+        padding: 20px 15px;
+    }
+    .discount_wrapper .discount_percentage span:nth-child(1) {
+        font-size: 15vw;
+    }
+    .discount_wrapper .discount_description {
+        text-align: center;
     }
 }
